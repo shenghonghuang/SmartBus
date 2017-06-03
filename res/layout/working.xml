@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下一站"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="[站名]"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtApproach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="到了"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/main_mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.amap.api.maps.MapView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnApproach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进站"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出站"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转弯"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="让座"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnAntiTheft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="防盗"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnCrowd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拥挤"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
